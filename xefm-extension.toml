@@ -1,6 +1,6 @@
 [extension]
 id = "text-convert"
-version = "0.1.0"
+version = "0.1.1"
 api_version = 1
 name = "Text Convert"
 description = "Convert text encoding and newline styles using nkf."
