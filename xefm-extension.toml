@@ -1,0 +1,19 @@
+[extension]
+id = "text-convert"
+version = "0.1.0"
+api_version = 1
+name = "Text Convert"
+description = "Convert text encoding and newline styles using nkf."
+min_xefm = "1.12.0"
+platforms = ["windows"]
+updates = "github:SinisterSoftware/xefm-text-convert"
+
+[contributes.actions]
+"text-convert.convert" = { entry = "text_convert.actions:convert_text_files", description = "Convert text encoding and newline style" }
+
+[contributes.key_suggestions]
+"text-convert.convert" = ["Alt-Shift-N"]
+
+[requires]
+python_packages = ["pywin32"]
+programs = ["nkf"]
